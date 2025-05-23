@@ -8,4 +8,4 @@
 --JavaScript
 
 ### Author
-(Aghaulor Gift)[aghaulor.gift@gmail.com] 
+[Aghaulor Gift](aghaulor.gift@gmail.com) 
