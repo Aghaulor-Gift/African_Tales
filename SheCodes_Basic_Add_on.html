@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An African Tales</title> 
+    <style>
+      body {        
+        background-color: #f5deb3;
+        background-size: cover;
+        text-align: center;              
+      }
+
+      .container {
+        max-width: 750px;
+        margin: 20px auto;        
+        background-color: #E58948;        
+        text-align:center;
+        padding: 15px;
+        border-radius: 10px; 
+        margin-block-start: 40px;
+        margin-block-end:40px;
+      }
+
+      h1 {
+        font-size: 50px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:rgb(239, 243, 233);
+        margin-top: 20px;
+        margin-bottom:5px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+      }
+
+      h2 {
+        font-size: 30px;
+        color:black;
+        padding: none;
+      }
+
+      h2 a {
+        text-decoration:none;
+        color:black;
+      }
+
+      p {
+        padding-top:220px;
+        text-align: justify;
+        font-size:25px;
+        font-weight:400;
+        line-height: 1.5;
+        margin-block-start: 40px;
+        margin-block-end:40px;
+        margin-left:40px;
+        margin-right:40px;
+        
+      }
+
+      button {
+        display:block;
+        margin: auto;
+        padding-top:10px ;
+        padding-bottom: 20px;
+        border: 1px solid #F5DEB3;
+        transition: all 150ms ease-in-out; 
+      }
+
+      button.change_theme {
+        background-color: black;
+        font-size:13px;
+        color:white;
+        margin-top: 20px;
+        padding:15px 20px;
+        border-radius:8px;
+      }
+
+      button.change_theme:hover {
+        color:black;
+        font-size:13px;
+        background-color: white;
+        margin-top:30px;
+        padding:15px 20px;
+        border:1px solid gold;
+      }
+
+      button.learn-more-btn {
+        padding: 10px 20px;
+        border-color:gold;
+        border-radius:16px;
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+
+      button.learn-more-btn:hover {
+        color:#E58948;
+      }
+     
+      img { 
+        border-radius:16px;
+        max-width: 100%;;
+        padding-top: 20px;
+        margin-top: 10px;
+       }
+
+      img.header-icon {
+        display:flex;
+        margin: auto;
+        width:40px;
+        vertical-align: middle;
+      }
+
+      a.credit_freepik {
+        padding-top:10px;
+        text-decoration: none;
+        color:black;
+      }
+
+      .African_tales_intro_picture {
+        transition:all 160ms ease-in-out;
+      }
+
+      .African_tales_intro_picture:hover {
+        filter: contrast(80%);
+        transform:scale(1.05);
+      }
+
+      .grid {
+       display: grid;
+       grid-template-columns: 320px 320px;
+       grid-gap: 30px;
+       width:1000px;
+       height:500px;
+       margin-left:40px;
+       margin-right:40px;     
+
+      }
+
+      .grid img:hover {
+        transform: scale(1.3);
+      }
+
+      .dark {
+        background: linear-gradient(112.1deg, rgb(9, 11, 16) 22.4%,rgb(16, 30, 76) 87.2%);
+        color:white;
+        button.learn-more-btn {
+          background-color: #0a0f1d;
+          color: gold;
+        }
+        
+        body, html {
+          margin: 0;
+          position: relative; 
+          overflow: hidden;
+          height: 100%;
+          background: #0b0c10; /* dark night */
+          overflow: hidden;
+        }
+
+        .night-sky {
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+
+        .moon {
+          position: absolute;
+          top: 50px;
+          right: 50px;
+          width: 80px;
+          height: 80px;
+          background: #f1f1f1;
+          border-radius: 50%;
+          box-shadow: 0 0 20px 5px #fff;
+        }
+
+        .star {
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: rgba(255, 243, 113, 0.913);
+          clip-path: polygon(
+            50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%
+          );
+          box-shadow: 0 0 8px 3px yellow;
+          animation: twinkle 1.5s infinite ease-in-out alternate;
+        }
+
+        /* Twinkle Animation */
+        @keyframes twinkle {
+          0%   { opacity: 0.7; transform: scale(1); }
+          100% { opacity: 1; transform: scale(1.2); }
+        }
+
+                
+              }
+
+      .dark .container {
+        background: linear-gradient(32.1deg, rgb(2, 24, 95) 30.4%,rgb(56, 73, 130) 70.6%);
+        
+      }
+
+      .dark a {
+        color: gold;
+      }
+
+      footer {
+        font-size:25px;
+        font-weight: 400;
+        padding-top: 20px;
+      }
+
+      footer a {
+        font-size:25px;
+        text-decoration: none;
+        font-weight: 600;
+        color: coral;
+        font-weight: 700;
+        font-style: italic;
+        
+      }
+
+    </style>   
+</head>
+<body >
+
+  <button class="change_theme">Change Theme</button>
+   <div class="night-sky">
+    <div class="moon"></div>
+
+    <!-- Example of multiple stars -->
+    <div class="star" style="top: 40px; left: 100px;"></div>
+    <div class="star" style="top: 120px; left: 150px;"></div>
+    <div class="star" style="top: 200px; left: 300px;"></div>
+    <div class="star" style="top: 300px; right: 100px;"></div>
+    <div class="star" style="top: 180px; right: 250px;"></div>
+
+    <div class="star" style="top: 40px; left: 200px;"></div>
+    <div class="star" style="top: 100px; left: 250px;"></div>
+    <div class="star" style="top: 200px; right: 50px;"></div>
+    <div class="star" style="top: 350px; right: 200px;"></div>
+    <div class="star" style="top: 180px; right: 250px;"></div>
+  </div>
+  <div class="container">
+    <div>
+      <h1>
+    <img Class="header-icon" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/318/original/African-drum.png?1747842796" 
+    alt="African Drum"/>
+    African Tales</h1>
+    </div>
+  
+  <h2 ><a href="https://anikefoundation.org/african-folktales" target="_blank">Listen to the African Tales</a></h2>
+  <img  
+  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/301/original/African-night-tales.png?1747826165"
+  alt="Africa Night Tales" style="height:575px; width: 675px;"
+  class="African_tales_intro_picture"
+  />
+
+  <div class="grid">
+    <div class="grid-item">
+      <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/412/original/African-living_with_animals.jpg?1747937121"
+      alt="African with animals" style="height:300px;"/>
+      <a  class="credit_freepik" href="http://www.freepik.com">Designed by brgfx / Freepik</a>
+
+    </div>
+  
+
+  <img
+  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/299/original/African_Folktales.png?1747825975"
+  alt="Animals" style="height:300px;"
+  /> 
+
+  <img
+  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/297/original/African-tales-2.jpg?1747825947"
+  alt="" style="height:300px;"/>
+  <div class="grid-item">
+    <img
+    src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/166/411/original/African-story.jpg?1747936805"
+    alt="African people with animals" style="height:300px;"/>
+    <a  class="credit_freepik" href="http://www.freepik.com">Designed by brgfx / Freepik</a>
+  </div>
+
+  </div>
+
+  
+
+  <p>
+    Africa has a rich background with diverse cultures, musics and foods,
+    amongst others that have been past on from generations is the African tales.
+    They are traditional stories passed down by elders to children, imparting wisdom and guiding their way of life.
+    It is usually told in a particular setting that involves children sitting in circles at
+    night, and some would include drum to make it fun.This was traditionally called 'Tales by
+    Moonlight'. However, this stories are taught using animals like tortoise, crocodiles,
+    elephants, birds, etc.
+    
+  </p>
+
+  <button class="learn-more-btn">Learn More</button>
+  </div>
+  <footer>Coded with 🤎 by<a href="http://www.linkedin.com/in/gift.aghaulor" target="_blank"> Aghaulor Gift</a> with HTML, CSS, and JavaScript</footer>
+
+</footer>
+<script>
+  function changeTheme() {
+    let body = document.querySelector('body');
+    if (body.classList.contains('dark')) {
+      body.classList.remove('dark');
+    } else {
+      body.classList.add('dark');
+    }
+  }
+
+  let themeButton = document.querySelector('.change_theme');
+  themeButton.addEventListener('click', changeTheme);
+
+  /*For pop-up when the learn more button is clicked*/
+ function handleLearnMoreClick() {
+  const story = prompt("What story are you interested in?");
+  const email = prompt("What is your email address?");
+  alert(`Thank you, ${email}. We’ll keep you updated about "${story}".`);
+ }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const learnMoreButton = document.querySelector('.learn-more-btn');
+
+  if (learnMoreButton) {
+    learnMoreButton.addEventListener('click', handleLearnMoreClick);
+  }
+});
+</script>
+</body>
+</html>
